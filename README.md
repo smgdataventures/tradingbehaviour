@@ -13,4 +13,3 @@ A psychology-based quiz tool to help options traders discover their behavioral p
 
 ```bash
 dotnet build
-dotnet run --project TraderBehaviorQuiz
