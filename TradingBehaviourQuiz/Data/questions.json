@@ -1,0 +1,121 @@
+[
+  {
+    "Text": "How do you usually take your first trade of the day?",
+    "Options": [
+      {
+        "Text": "By checking key technical levels",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Based on news or social media buzz",
+        "Category": "Reactive"
+      },
+      {
+        "Text": "Impulsively as the market opens",
+        "Category": "Impulsive"
+      }
+    ]
+  },
+  {
+    "Text": "What do you do after your first profitable trade?",
+    "Options": [
+      {
+        "Text": "Wait for the next setup",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Feel overconfident and increase position size",
+        "Category": "Impulsive"
+      },
+      {
+        "Text": "Take revenge trades after a small loss",
+        "Category": "Emotional"
+      }
+    ]
+  },
+  {
+    "Text": "How often do you emotionally react to news or market chatter?",
+    "Options": [
+      {
+        "Text": "Ignore noise and stick to your plan",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Act immediately when news breaks",
+        "Category": "Reactive"
+      },
+      {
+        "Text": "Wait for peer confirmation before acting",
+        "Category": "Reactive"
+      }
+    ]
+  },
+  {
+    "Text": "If you hold a losing trade, how do you typically behave?",
+    "Options": [
+      {
+        "Text": "Accept the stop loss and move on",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Let it run hoping it reverses",
+        "Category": "Emotional"
+      },
+      {
+        "Text": "Immediately close out to cut pain",
+        "Category": "Impulsive"
+      }
+    ]
+  },
+  {
+    "Text": "Which cognitive bias do you recognize most in yourself?",
+    "Options": [
+      {
+        "Text": "Only seeking info that confirms my view",
+        "Category": "Reactive"
+      },
+      {
+        "Text": "Fixating on original entry price",
+        "Category": "Reactive"
+      },
+      {
+        "Text": "Panicking when others react emotionally",
+        "Category": "Reactive"
+      }
+    ]
+  },
+  {
+    "Text": "What drives your trading decisions most?",
+    "Options": [
+      {
+        "Text": "Structured plan and support/resistance levels",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Fear of missing out on big moves",
+        "Category": "Emotional"
+      },
+      {
+        "Text": "Following peers or expert advice",
+        "Category": "Reactive"
+      }
+    ]
+  },
+  {
+    "Text": "How often do you journal or reflect on your emotional state post-trade?",
+    "Options": [
+      {
+        "Text": "Always, to track patterns and improve",
+        "Category": "Disciplined"
+      },
+      {
+        "Text": "Rarely—I react more than reflect",
+        "Category": "Emotional"
+      },
+      {
+        "Text": "Never—only profit/loss matters",
+        "Category": "Impulsive"
+      }
+    ]
+  }
+]

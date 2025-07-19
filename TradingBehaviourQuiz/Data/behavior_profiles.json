@@ -1,0 +1,54 @@
+{
+  "Impulsive": {
+    "Description": "⚠️ You tend to act on instinct—let’s build structure:",
+    "Steps": [
+      "Use a 5–9-step pre-trade checklist (setup + risk + R:R)",
+      "Keep a trade journal with emotional state ratings for each trade",
+      "Start your session with 2 min mindfulness to reset mindset"
+    ],
+    "NextSteps": [
+      "Draft your checklist and print it.",
+      "Add emotion field to journal.",
+      "Set a reminder for pre-session mindfulness."
+    ]
+  },
+  "Disciplined": {
+    "Description": "✅ You’re on track—now refine and sharpen:",
+    "Steps": [
+      "Enforce ≤2% capital risk per trade with ≥2:1 Risk-Reward",
+      "Review daily journal and weekly patterns",
+      "Note emotional triggers and have coping scripts"
+    ],
+    "NextSteps": [
+      "Add R:R and compliance fields to journal.",
+      "Schedule end-of-week review sessions.",
+      "Document 2–3 emotional signals and responses."
+    ]
+  },
+  "Reactive": {
+    "Description": "🔁 You respond to noise—let’s shield your focus:",
+    "Steps": [
+      "Only trade when technical signals hit your setup criteria",
+      "Mute news and social during trade → block distractions",
+      "Journal: “Was this plan-based or noise-driven?” for each trade"
+    ],
+    "NextSteps": [
+      "Build entry checklist with indicator thresholds.",
+      "Use device features to block distractions.",
+      "Review journal entries weekly for plan-adherence."
+    ]
+  },
+  "Emotional": {
+    "Description": "😓 You may chase losses/emotional highs—let’s build resilience:",
+    "Steps": [
+      "Apply fixed stop-loss & take-profit BEFORE trade",
+      "Pause after any loss or win—then journal emotions",
+      "Daily mindfulness + post-trade emotional ratings"
+    ],
+    "NextSteps": [
+      "Set daily max-loss limit and stop trading after reached.",
+      "After every trade, log emotional rating (1–10).",
+      "Build a 5-min recovery routine (breathing, short break)."
+    ]
+  }
+}

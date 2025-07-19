@@ -3,35 +3,45 @@
 using TradingBehaviourQuiz.Services.Interfaces;
 
 namespace TradingBehaviourQuiz.Services.Implementations
+
+//IResultInterpreter
 {
     public class ResultInterpreter : IResultInterpreter
     {
+        private readonly BehaviorProfileService _profileService;
+
+        public ResultInterpreter()
+        {
+            _profileService = new BehaviorProfileService();
+        }
+
         public void InterpretResults(Dictionary<string, int> categoryScores)
         {
-            Console.WriteLine("\n--- Behavior Profile ---");
-            foreach (var kvp in categoryScores.OrderByDescending(k => k.Value))
-            {
-                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-            }
-
+            var profiles = _profileService.LoadProfiles();
             var dominant = categoryScores.OrderByDescending(k => k.Value).First().Key;
-            Console.WriteLine($"\\n🧠 Dominant Behavior: {dominant}");
 
-            switch (dominant)
+            var profile = dominant switch
             {
-                case "Impulsive":
-                    Console.WriteLine("⚠️ You may benefit from journaling and pre-trade checklists.");
-                    break;
-                case "Disciplined":
-                    Console.WriteLine("✅ You have a strong base. Focus on consistency and position sizing.");
-                    break;
-                case "Reactive":
-                    Console.WriteLine("🔁 Reduce noise—focus on your strategy, not news triggers.");
-                    break;
-                case "Emotional":
-                    Console.WriteLine("😓 Watch for revenge trades. Practice patience and detachment.");
-                    break;
+                "Impulsive" => profiles.Impulsive,
+                "Disciplined" => profiles.Disciplined,
+                "Reactive" => profiles.Reactive,
+                "Emotional" => profiles.Emotional,
+                _ => throw new ArgumentException("Unknown dominant behavior")
+            };
+
+            Console.WriteLine($"\n🧠 Dominant Behavior: {dominant}\n");
+            Console.WriteLine(profile.Description);
+            Console.WriteLine("\nSteps to Improve:");
+            foreach (var step in profile.Steps)
+            {
+                Console.WriteLine($"- {step}");
+            }
+            Console.WriteLine("\nNext Steps:");
+            foreach (var nextStep in profile.NextSteps)
+            {
+                Console.WriteLine($"- {nextStep}");
             }
         }
     }
+
 }
